@@ -23,8 +23,11 @@ const Input: FC<InputProps> = ({
         placeholder={placeholder}
         onChange={({ target }) => setValue(target.value)}
         {...props}
-        className="transition-all border-b-2 outline-none border-[#00b4d8] pb-1 text-[18px] w-[350px] px-2 focus:border-[#03045e] bg-transparent placeholder:text-[#adb5bd]"
-        style={{ fontFamily: "Josefin Sans" }}
+        className="transition-all border-2 outline-none py-5 px-7 placeholder:text-[18px] w-[450px] placeholder:text-[#287ADD] text-[20px] font-normal text-[#373737]"
+        style={{
+          fontFamily: "Josefin Sans",
+          fontWeight: "600",
+        }}
       />
     </div>
   );

@@ -26,42 +26,43 @@ export default function Home() {
   // }, []);
 
   return (
-    <div className="flex flex-col items-center w-screen h-screen place-content-center bg-[#FAFAFA]">
-      <div>
-        <img src="./email-svgrepo-com.svg" className="w-[80px] h-[80px] mb-6" />
+    <div className="w-scren h-screen bg-[#FAFAFA] flex flex-row gap-7">
+      <img src="./bg_left.png" className="box-border h-screen" />
+      <div className="pt-[80px] flex flex-col">
+        <div>
+          <img src="./global_logo.svg" className="mb-20 col-span-full" />
+        </div>
+        <form className="flex flex-col gap-8">
+          <Input
+            type="text"
+            id="name"
+            name="name"
+            value={name}
+            setValue={setName}
+            placeholder="NAME"
+          />
+          <Input
+            type="email"
+            id="email"
+            name="email"
+            value={email}
+            setValue={setEmail}
+            placeholder="EMAIL"
+          />
+          <button
+            style={{ fontFamily: "Josefin Sans", fontWeight: "bold" }}
+            className="self-end bg-gradient-to-r from-[#3F37C9] to-[#4361EE] text-white py-6 px-8 text-[20px]"
+          >
+            SIGN UP ME
+          </button>
+        </form>
+        <div className="flex flex-row self-end gap-4 mt-auto mb-5">
+          <img className="cursor-pointer" src="./facebook_icon.svg" alt="" />
+          <img className="cursor-pointer" src="./insta_icon.svg" alt="" />
+          <img className="cursor-pointer" src="./linkedin_icon.svg" alt="" />
+          <img className="cursor-pointer" src="./youtube_icon.svg" alt="" />
+        </div>
       </div>
-      <div className="text-center">
-        <h1
-          style={{ fontFamily: "Josefin Sans" }}
-          className="text-4xl font-bold"
-        >
-          Stay Positive
-        </h1>
-        <p style={{ fontFamily: "Josefin Sans" }} className="text-lg">
-          Receive inspirational messages daily on your email
-        </p>
-      </div>
-      <form className="flex flex-row gap-4 mt-6">
-        <Input
-          type="text"
-          id="name"
-          name="name"
-          value={name}
-          setValue={setName}
-          placeholder="Name"
-        />
-        <Input
-          type="email"
-          id="email"
-          name="email"
-          value={email}
-          setValue={setEmail}
-          placeholder="Email"
-        />
-      </form>
-      <button className="transition-all box-border w-[150px] mt-6 bg-[#00b4d8] text-white font-bold py-2 rounded-full hover:bg-[#0077b6]">
-        Sign Up Me
-      </button>
     </div>
   );
 }

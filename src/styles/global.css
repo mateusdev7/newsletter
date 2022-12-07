@@ -1,0 +1,14 @@
+input {
+  border: double 3px transparent;
+  background-image: linear-gradient(#fafafa, #fafafa), 
+                    linear-gradient(to right, #4361EE, #7209B7);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
