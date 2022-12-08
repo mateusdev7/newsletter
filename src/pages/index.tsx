@@ -40,6 +40,7 @@ export default function Home() {
             value={name}
             setValue={setName}
             placeholder="NAME"
+            required
           />
           <Input
             type="email"
@@ -48,10 +49,11 @@ export default function Home() {
             value={email}
             setValue={setEmail}
             placeholder="EMAIL"
+            required
           />
           <button
             style={{ fontFamily: "Josefin Sans", fontWeight: "bold" }}
-            className="self-end bg-gradient-to-r from-[#3F37C9] to-[#4361EE] text-white py-6 px-8 text-[20px]"
+            className="button self-end text-white py-4 px-6 text-[20px]"
           >
             SIGN UP ME
           </button>

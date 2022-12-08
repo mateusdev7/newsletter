@@ -1,14 +1,15 @@
 input {
   border: double 3px transparent;
-  background-image: linear-gradient(#fafafa, #fafafa), 
-                    linear-gradient(to right, #4361EE, #7209B7);
+  background-image: linear-gradient(#fafafa, #fafafa),
+    linear-gradient(to right, #4361ee, #7209b7);
   background-origin: border-box;
   background-clip: padding-box, border-box;
 }
 
-.container {
-  max-width: 1440px;
-  margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
+.button {
+  background-image: linear-gradient(180deg, #4361EE 0%, #1810AC 100%);
+}
+
+.button:hover {
+  background-image: linear-gradient(180deg, #425FE6 0%, #160E96 100%);
 }
