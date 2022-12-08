@@ -1,0 +1,23 @@
+.input-usa {
+  border: double 3px transparent;
+  background-image: linear-gradient(#ffffff, #ffffff),
+  linear-gradient(to right, #003D9E, #BF0A30);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+}
+
+.input-brazil {
+  border: double 3px transparent;
+  background-image: linear-gradient(#ffffff, #ffffff),
+  linear-gradient(to right, #009739, #FEDD00, #012169);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+}
+
+.button {
+  background-image: linear-gradient(180deg, #4361EE 0%, #1810AC 100%);
+}
+
+.button:hover {
+  background-image: linear-gradient(180deg, #425FE6 0%, #160E96 100%);
+}

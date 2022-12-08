@@ -1,5 +1,5 @@
 import '../styles/globals.css'
-import "../styles/global.css";
+import "../styles/global.scss";
 import '../styles/fonts.css'
 import type { AppProps } from 'next/app'
 
